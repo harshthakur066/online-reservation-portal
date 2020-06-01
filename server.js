@@ -2,7 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 
-require("./models/Customer");
+require("./models/User");
 
 mongoose.connect(
   "mongodb+srv://myuser:customerform@customer-details-o8c3n.mongodb.net/test?retryWrites=true&w=majority",
@@ -24,7 +24,7 @@ const app = express();
 
 app.use(bodyParser.json());
 
-// require("./routes/postRoutes")(app);
+require("./routes/userRoutes")(app);
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
