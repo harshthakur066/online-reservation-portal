@@ -2,7 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 
-// require("./models/Post");
+require("./models/Customer");
 
 mongoose.connect(
   "mongodb+srv://myuser:customerform@customer-details-o8c3n.mongodb.net/test?retryWrites=true&w=majority",
