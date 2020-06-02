@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { Form, Message, Button } from "semantic-ui-react";
 
 import AuthForm from "../authForm/AuthForm";
-
 import { auth, createUserProfileDocument } from "../../firebase/firebase.utils";
 
 import "./Signup.css";
@@ -14,6 +13,8 @@ const SignUp = () => {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [errorMsg, setErrorMsg] = useState("");
+
+  const history = useHistory();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -35,6 +36,8 @@ const SignUp = () => {
       setEmail("");
       setPassword("");
       setConfirmPassword("");
+
+      history.push("/provider/getcustomers");
     } catch (error) {
       setErrorMsg(error.message);
     }

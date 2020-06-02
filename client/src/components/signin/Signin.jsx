@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { Form, Message, Button } from "semantic-ui-react";
 
 import AuthForm from "../authForm/AuthForm";
@@ -13,12 +13,16 @@ const SignIn = () => {
   const [password, setPassword] = useState("");
   const [errorMsg, setErrorMsg] = useState("");
 
+  const history = useHistory();
+
   const handleSubmit = async (event) => {
     event.preventDefault();
 
     try {
       await auth.signInWithEmailAndPassword(email, password);
-      this.setState({ email: "", password: "" });
+      setEmail("");
+      setPassword("");
+      history.push("/provider/getcustomers");
     } catch (error) {
       setErrorMsg(error.message);
     }
@@ -50,7 +54,7 @@ const SignIn = () => {
           <Button positive type="submit">
             Sign in
           </Button>
-          <Button primary onClick={signInWithGoogle} isGoogleSignIn>
+          <Button primary onClick={signInWithGoogle}>
             Sign in with Google
           </Button>
         </div>
