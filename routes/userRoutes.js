@@ -13,6 +13,17 @@ module.exports = (app) => {
     }
   });
 
+  app.get("/api/v1/user/:facilityrequired", async (req, res) => {
+    const facilityRequired = req.params.facilityrequired;
+    try {
+      const usersRequired = await User.find({ facility: facilityRequired });
+
+      return res.status(200).send(usersRequired);
+    } catch (error) {
+      return res.status(500).send("Server Error");
+    }
+  });
+
   app.post("/api/v1/user", async (req, res) => {
     try {
       const user = new User(req.body);
