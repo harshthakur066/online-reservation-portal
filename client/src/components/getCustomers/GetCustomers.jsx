@@ -10,10 +10,10 @@ const GetCustomers = () => {
 
   const panes = [
     {
-      menuItem: "Restaurents",
+      menuItem: "Restaurants",
       render: () => (
         <Tab.Pane>
-          <CustomerList facility="restaurents" />
+          <CustomerList facility="restaurant" />
         </Tab.Pane>
       ),
     },
@@ -37,7 +37,7 @@ const GetCustomers = () => {
       menuItem: "Hotels",
       render: () => (
         <Tab.Pane>
-          <CustomerList facility="hotels" />
+          <CustomerList facility="hotel" />
         </Tab.Pane>
       ),
     },

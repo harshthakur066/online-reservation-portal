@@ -42,7 +42,7 @@ const CustomerForm = () => {
       email: email,
       address: address,
       phoneNumber: phone,
-      facility: facility,
+      facility: facility.toLowerCase(),
     };
     formSubmit(userForm);
   };
@@ -97,7 +97,7 @@ const CustomerForm = () => {
           fluid
           label="Facilities"
           placeholder="What type of facility you are looking for..."
-          value={facility.toLowerCase()}
+          value={facility}
           onChange={(e) => setFacility(e.target.value)}
         />
         <Message error header="Oops!" content={errorMsg} />
@@ -124,10 +124,10 @@ const CustomerForm = () => {
                 for your need.
               </b>
               <h5>
-                <div style={{ margin: "5px" }}>1. Restaurent</div>
+                <div style={{ margin: "5px" }}>1. Restaurant</div>
                 <div style={{ margin: "5px" }}>2. Spa</div>
                 <div style={{ margin: "5px" }}>3. Saloon</div>
-                <div style={{ margin: "5px" }}>4. Hotels</div>
+                <div style={{ margin: "5px" }}>4. Hotel</div>
               </h5>
             </Modal.Description>
           </Modal.Content>

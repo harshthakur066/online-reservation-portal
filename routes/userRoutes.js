@@ -16,7 +16,9 @@ module.exports = (app) => {
   app.get("/api/v1/user/:facilityrequired", async (req, res) => {
     const facilityRequired = req.params.facilityrequired;
     try {
-      const usersRequired = await User.find({ facility: facilityRequired });
+      const usersRequired = await User.find({
+        facility: facilityRequired,
+      });
 
       return res.status(200).send(usersRequired);
     } catch (error) {
