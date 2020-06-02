@@ -4,10 +4,10 @@ const { Schema } = mongoose;
 
 const userSchema = new Schema({
   name: String,
-  mobileNumber: Number,
+  mobileNumber: String,
   email: String,
   address: String,
-  phoneNumber: Number,
+  phoneNumber: String,
   facility: String,
 });
 

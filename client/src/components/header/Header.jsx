@@ -7,7 +7,9 @@ const Header = () => {
     <div>
       <nav>
         <div className="nav-wrapper light-blue darken-4">
-          <div className="name">Facility Booking</div>
+          <div className="name" style={{ cursor: "pointer" }}>
+            Facility Booking
+          </div>
         </div>
       </nav>
     </div>
