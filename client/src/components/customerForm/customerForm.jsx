@@ -2,13 +2,6 @@ import React, { useState } from "react";
 import { Form, Message, Modal, Button } from "semantic-ui-react";
 import axios from "axios";
 
-// const options = [
-//   { key: 1, text: "Restaurent", value: "Restaurent" },
-//   { key: 2, text: "Spa", value: "Spa" },
-//   { key: 3, text: "Saloon", value: "Saloon" },
-//   { key: 4, text: "Hotels", value: "Hotels" },
-// ];
-
 const CustomerForm = () => {
   const [name, setName] = useState("");
   const [mobile, setMobile] = useState("");
