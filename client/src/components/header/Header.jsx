@@ -1,13 +1,13 @@
 import React from "react";
 
+import "./Header.css";
+
 const Header = () => {
   return (
     <div>
       <nav>
         <div className="nav-wrapper light-blue darken-4">
-          <div className="brand-logo center" style={{ cursor: "pointer" }}>
-            Online Reservation Portal
-          </div>
+          <div className="name">Facility Booking</div>
         </div>
       </nav>
     </div>

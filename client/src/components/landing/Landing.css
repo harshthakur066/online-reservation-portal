@@ -1,0 +1,12 @@
+.display {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  margin-top: 20%;
+}
+
+.view {
+  margin: 10px;
+}
