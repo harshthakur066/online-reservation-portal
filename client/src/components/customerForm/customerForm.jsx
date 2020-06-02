@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Form, Message, Modal, Button } from "semantic-ui-react";
+import { useHistory } from "react-router-dom";
 import axios from "axios";
 
 const CustomerForm = () => {
@@ -11,6 +12,8 @@ const CustomerForm = () => {
   const [facility, setFacility] = useState("");
   const [errorMsg, setErrorMsg] = useState("");
   const [open, setOpen] = useState(false);
+
+  const history = useHistory();
 
   const close = () => {
     setOpen(false);
@@ -24,7 +27,8 @@ const CustomerForm = () => {
     try {
       setErrorMsg("");
       await axios.post("/api/v1/user", body);
-      alert("Form Submitted");
+      // alert("Form Submitted");
+      history.push("/customer/thanks");
     } catch (err) {
       setErrorMsg(err.message);
     }

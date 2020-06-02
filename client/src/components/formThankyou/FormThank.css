@@ -1,0 +1,15 @@
+.main {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+.sub {
+  margin: 20px;
+}
+
+.view {
+  margin: 10%;
+}

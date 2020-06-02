@@ -7,6 +7,7 @@ import Landing from "./components/landing/Landing";
 import CustomerForm from "./components/customerForm/CustomerForm";
 import SignIn from "./components/signin/Signin";
 import SignUp from "./components/signup/Signup";
+import FormThankyou from "./components/formThankyou/FormThankyou";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route exact path="/provider/signup" component={SignUp} />
           {/* <Route exact path='/provider/getcustomers' component={}/> */}
           <Route exact path="/customer/form" component={CustomerForm} />
+          <Route exact path="/customer/thanks" component={FormThankyou} />
         </div>
       </BrowserRouter>
     </Container>

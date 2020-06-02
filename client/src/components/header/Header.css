@@ -3,3 +3,7 @@
   font-weight: 400;
   font-size: 35px;
 }
+
+.name:hover {
+  color: white;
+}
