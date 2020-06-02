@@ -97,7 +97,7 @@ const CustomerForm = () => {
           fluid
           label="Facilities"
           placeholder="What type of facility you are looking for..."
-          value={facility}
+          value={facility.toLowerCase()}
           onChange={(e) => setFacility(e.target.value)}
         />
         <Message error header="Oops!" content={errorMsg} />
