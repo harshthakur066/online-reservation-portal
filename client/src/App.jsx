@@ -4,7 +4,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 
 import Header from "./components/header/Header";
 import Landing from "./components/landing/Landing";
-import customerForm from "./components/customerForm/customerForm";
+import CustomerForm from "./components/customerForm/CustomerForm";
 
 const App = () => {
   return (
@@ -16,7 +16,7 @@ const App = () => {
           {/* <Route exact path='/provider/signin' component={}/> */}
           {/* <Route exact path='/provider/signup' component={}/> */}
           {/* <Route exact path='/provider/getcustomers' component={}/> */}
-          <Route exact path="/customer/form" component={customerForm} />
+          <Route exact path="/customer/form" component={CustomerForm} />
         </div>
       </BrowserRouter>
     </Container>
