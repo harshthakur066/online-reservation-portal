@@ -3,7 +3,7 @@ import { Form, Message, Modal, Button } from "semantic-ui-react";
 import { useHistory } from "react-router-dom";
 import axios from "axios";
 
-const CustomerForm = () => {
+const CustomerFacilityForm = () => {
   const [name, setName] = useState("");
   const [mobile, setMobile] = useState("");
   const [email, setEmail] = useState("");
@@ -142,4 +142,4 @@ const CustomerForm = () => {
   );
 };
 
-export default CustomerForm;
+export default CustomerFacilityForm;

@@ -4,7 +4,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 
 import Header from "./components/header/Header";
 import Landing from "./components/landing/Landing";
-import CustomerForm from "./components/customerForm/CustomerForm";
+import CustomerFacilityForm from "./components/customerFacilityForm/CustomerFacilityForm";
 import SignIn from "./components/signin/Signin";
 import SignUp from "./components/signup/Signup";
 import FormThankyou from "./components/formThankyou/FormThankyou";
@@ -20,7 +20,7 @@ const App = () => {
           <Route exact path="/provider/signin" component={SignIn} />
           <Route exact path="/provider/signup" component={SignUp} />
           <Route exact path="/provider/getcustomers" component={GetCustomers} />
-          <Route exact path="/customer/form" component={CustomerForm} />
+          <Route exact path="/customer/form" component={CustomerFacilityForm} />
           <Route exact path="/customer/thanks" component={FormThankyou} />
         </div>
       </BrowserRouter>
