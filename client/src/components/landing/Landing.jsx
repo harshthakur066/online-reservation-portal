@@ -43,22 +43,37 @@ class Landing extends React.Component {
     const { currentUser } = this.state;
     console.log(currentUser);
     return (
-      <div className="display">
-        <div className="view">
-          <Link to="/customer/form">
-            <Button primary className=" btn-large ">
-              For Customers
-            </Button>
-          </Link>
+      <div>
+        <div className="text">
+          Facility Booking is an online reservation portal for customers who
+          wants different facilities and the providers who are looking for
+          customers.
+          <br />
+          <br />
+          Customers can fill up the form and mention that which type of facility
+          they are looking for as we provide facilites.
+          <br />
+          <br />
+          Faccility providers can login to thier to the account and can have
+          thier customers details.
         </div>
-        <div className="view">
-          <Link
-            to={currentUser ? "/provider/getcustomers" : "/provider/signin"}
-          >
-            <Button primary className="btn-large ">
-              For Facility Providers
-            </Button>
-          </Link>
+        <div className="display">
+          <div className="view">
+            <Link to="/customer/form">
+              <Button primary className=" btn-large ">
+                For Customers
+              </Button>
+            </Link>
+          </div>
+          <div className="view">
+            <Link
+              to={currentUser ? "/provider/getcustomers" : "/provider/signin"}
+            >
+              <Button primary className="btn-large ">
+                For Facility Providers
+              </Button>
+            </Link>
+          </div>
         </div>
       </div>
     );

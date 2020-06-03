@@ -4,9 +4,16 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: center;
-  margin-top: 20%;
+  margin-top: 5%;
 }
 
 .view {
   margin: 10px;
+}
+
+.text {
+  text-align: center;
+  margin-top: 10%;
+  font-size: medium;
+  font-weight: 600;
 }

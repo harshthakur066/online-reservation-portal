@@ -4,7 +4,7 @@ import { Form, Message, Button } from "semantic-ui-react";
 
 import AuthForm from "../authForm/AuthForm";
 
-import { auth, signInWithGoogle } from "../../firebase/firebase.utils";
+import { auth } from "../../firebase/firebase.utils";
 
 import "./Signin.css";
 
