@@ -41,7 +41,7 @@ class Landing extends React.Component {
   }
   render() {
     const { currentUser } = this.state;
-    // console.log(currentUser);
+    console.log(currentUser);
     return (
       <div className="display">
         <div className="view">

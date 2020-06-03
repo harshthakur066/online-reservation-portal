@@ -1,7 +1,7 @@
 .sign-up {
   display: flex;
   flex-direction: column;
-  width: 380px;
+  width: 350px;
   justify-content: space-between;
   margin: 30px auto;
 }
@@ -12,9 +12,3 @@
 .bottomRoute {
   margin-top: 5%;
 }
-/* 
-@media screen and (max-width: 800px) {
-  height: 60px;
-  padding: 10px;
-  margin-bottom: 20px;
-} */

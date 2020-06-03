@@ -54,9 +54,9 @@ const SignIn = () => {
           <Button positive type="submit">
             Sign in
           </Button>
-          <Button primary onClick={signInWithGoogle}>
+          {/* <Button primary onClick={signInWithGoogle}>
             Sign in with Google
-          </Button>
+          </Button> */}
         </div>
       </Form>
       <Link to="/provider/signup">
